@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Ride - Chrismaxs</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Chrismaxs</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="active">Booking</a></li>
+            </ul>
+        </nav>
+        <h1>Book Your Ride</h1>
+    </header>
+
+    <section class="booking-form">
+        <h2>Fill in Your Details</h2>
+        <form action="process_booking.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="pickup">Pickup Location:</label>
+            <input type="text" id="pickup" name="pickup" required>
+
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Chrismaxs Transport Ltd. All rights reserved.</p>
+    </footer>
+</body>
+</html>
